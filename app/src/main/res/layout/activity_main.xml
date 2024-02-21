@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:id="@+id/btnred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:id="@+id/btngreen"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btnred"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:id="@+id/btnblue"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btngreen"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter list item count _____"
+        android:textSize="30sp"
+        android:id="@+id/tvcount"
+        app:layout_constraintTop_toBottomOf="@+id/btnred"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnsave"
+        app:layout_constraintTop_toBottomOf="@+id/tvcount"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear prefrence"
+        android:id="@+id/btnclearprefrence"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btnsave"
+        app:layout_constraintTop_toBottomOf="@+id/tvcount"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv"
+            app:layout_constraintTop_toBottomOf="@+id/btnsave"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
